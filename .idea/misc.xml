@@ -5,10 +5,17 @@
       <map>
         <entry key="..\:/Programming/Java/EGEinfnav/app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
         <entry key="..\:/Programming/Java/EGEinfnav/app/src/main/res/layout/fragment_task1.xml" value="0.36926605504587157" />
+        <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.196" />
+        <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.196" />
+        <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
+        <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/layout/fragment_task1.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/layout/list_task.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
