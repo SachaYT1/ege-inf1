@@ -11,6 +11,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     final TextView nameView, numberView;
 
 
+
     ViewHolder(View view) {
         super(view);
         iconView = view.findViewById(R.id.list_icon);

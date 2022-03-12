@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.egeinfnav.model.Task;
-
 import java.util.List;
 
 public class TaskAdapter  extends RecyclerView.Adapter<ViewHolder>{
@@ -37,7 +35,7 @@ public class TaskAdapter  extends RecyclerView.Adapter<ViewHolder>{
         Task state = tasks.get(position);
         holder.iconView.setImageResource(state.getIcon());
         holder.nameView.setText(state.getName());
-        holder.numberView.setText(state.getNum());
+        holder.numberView.setText(Integer.toString(state.getNum()));
     }
 
     @Override

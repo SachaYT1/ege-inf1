@@ -1,4 +1,6 @@
-package com.example.egeinfnav.model;
+package com.example.egeinfnav;
+
+import android.widget.ImageView;
 
 public class Task {
 
