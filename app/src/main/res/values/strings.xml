@@ -1,6 +1,39 @@
 <resources>
     <string name="app_name">ЕГЭ информатика 2022</string>
     <string name="task1">Анализ информационных моделей</string>
+    <string name="task2">Построение таблиц истинности логических выражений</string>
+    <string name="task3">
+Поиск информации в реляционных базах данных</string>
+    <string name="task4">Кодирование и декодирование информации</string>
+    <string name="task5">Анализ и построение алгоритмов для исполнителей</string>
+    <string name="task6">Анализ программ</string>
+    <string name="task7">Кодирование и декодирование информации. Передача информации</string>
+    <string name="task8">Перебор слов и системы счисления</string>
+    <string name="task9">Работа с таблицами</string>
+    <string name="task10">Поиск символов в текстовом редакторе</string>
+    <string name="task11">Вычисление количества информации</string>
+    <string name="task12">Выполнение алгоритмов для исполнителей</string>
+    <string name="task13">Поиск путей в графе</string>
+    <string name="task14">Кодирование чисел. Системы счисления</string>
+    <string name="task15">Преобразование логических выражений</string>
+    <string name="task16">Рекурсивные алгоритмы</string>
+    <string name="task17">
+Обработки числовой последовательности</string>
+    <string name="task18">Робот-сборщик монет</string>
+    <string name="task19">Выигрышная стратегия. Задание 1</string>
+    <string name="task20">Выигрышная стратегия. Задание 2</string>
+    <string name="task21">
+Выигрышная стратегия. Задание 3</string>
+    <string name="task22">Анализ программы с циклами и условными операторами</string>
+    <string name="task23">
+Оператор присваивания и ветвления. Перебор вариантов, построение дерева</string>
+    <string name="task24">Обработка символьных строк</string>
+    <string name="task25">Обработка целочисленной информации</string>
+    <string name="task26">
+Обработка целочисленной информации</string>
+    <string name="task27">Программирование</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
