@@ -12,10 +12,30 @@
         <action
             android:id="@+id/action_homeFragment_to_task1Fragment"
             app:destination="@id/task1Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task2Fragment"
+            app:destination="@id/task2Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task3Fragment"
+            app:destination="@id/task3Fragment" />
     </fragment>
     <fragment
         android:id="@+id/task1Fragment"
         android:name="com.example.egeinfnav.Task1Fragment"
         android:label="fragment_task1"
-        tools:layout="@layout/fragment_task1" />
+        tools:layout="@layout/fragment_task1" >
+        <action
+            android:id="@+id/action_task1Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/task2Fragment"
+        android:name="com.example.egeinfnav.Task2Fragment"
+        android:label="fragment_task2"
+        tools:layout="@layout/fragment_task2" />
+    <fragment
+        android:id="@+id/task3Fragment"
+        android:name="com.example.egeinfnav.Task3Fragment"
+        android:label="fragment_task3"
+        tools:layout="@layout/fragment_task3" />
 </navigation>

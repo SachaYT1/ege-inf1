@@ -46,6 +46,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/name"
         app:layout_constraintLeft_toLeftOf="@+id/list_icon"
         />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_margin="0dp"
+        android:background="@android:color/darker_gray"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,9 +11,16 @@ import java.util.List;
 
 public class TaskAdapter  extends RecyclerView.Adapter<ViewHolder>{
 
+    interface OnTaskClickListener{
+        void onTaskClick(Task state, int position);
+    }
+
+    private final OnTaskClickListener onClickListener;
+
     private final List<Task> tasks;
 
-    public TaskAdapter(List<Task> states) {
+    public TaskAdapter(List<Task> states, OnTaskClickListener onClickListener) {
+        this.onClickListener = onClickListener;
         this.tasks = states;
     }
     @Override
@@ -36,6 +43,14 @@ public class TaskAdapter  extends RecyclerView.Adapter<ViewHolder>{
         holder.iconView.setImageResource(state.getIcon());
         holder.nameView.setText(state.getName());
         holder.numberView.setText(Integer.toString(state.getNum()));
+
+        holder.itemView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                onClickListener.onTaskClick(state, position);
+            }
+        });
     }
 
     @Override
