@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/task1Fragment"
-        android:name="com.example.egeinfnav.Task1Fragment"
+        android:name="com.example.egeinfnav.fragment.Task1Fragment"
         android:label="fragment_task1"
         tools:layout="@layout/fragment_task1" >
         <action
@@ -30,12 +30,12 @@
     </fragment>
     <fragment
         android:id="@+id/task2Fragment"
-        android:name="com.example.egeinfnav.Task2Fragment"
+        android:name="com.example.egeinfnav.fragment.Task2Fragment"
         android:label="fragment_task2"
         tools:layout="@layout/fragment_task2" />
     <fragment
         android:id="@+id/task3Fragment"
-        android:name="com.example.egeinfnav.Task3Fragment"
+        android:name="com.example.egeinfnav.fragment.Task3Fragment"
         android:label="fragment_task3"
         tools:layout="@layout/fragment_task3" />
 </navigation>

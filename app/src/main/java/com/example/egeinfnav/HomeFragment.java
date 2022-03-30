@@ -88,7 +88,7 @@ public class HomeFragment extends Fragment {
                 int num_fragment = state.getNum();
                 getResources().getIdentifier("action_homeFragment_to_task" + Integer.toString(num_fragment) + "Fragment", "navigation", getContext().getPackageName());
                 Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task1Fragment);
-
+                Navigation.findNavController(view).getCurrentDestination();
             }
         };
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
