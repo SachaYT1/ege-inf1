@@ -18,6 +18,78 @@
         <action
             android:id="@+id/action_homeFragment_to_task3Fragment"
             app:destination="@id/task3Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task4Fragment"
+            app:destination="@id/task4Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task5Fragment"
+            app:destination="@id/task5Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task6Fragment"
+            app:destination="@id/task6Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task10Fragment"
+            app:destination="@id/task10Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task11Fragment"
+            app:destination="@id/task11Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task12Fragment"
+            app:destination="@id/task12Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task13Fragment"
+            app:destination="@id/task13Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task14Fragment"
+            app:destination="@id/task14Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task15Fragment"
+            app:destination="@id/task15Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task16Fragment"
+            app:destination="@id/task16Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task17Fragment"
+            app:destination="@id/task17Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task18Fragment"
+            app:destination="@id/task18Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task19Fragment"
+            app:destination="@id/task19Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task20Fragment"
+            app:destination="@id/task20Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task21Fragment"
+            app:destination="@id/task21Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task22Fragment"
+            app:destination="@id/task22Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task23Fragment"
+            app:destination="@id/task23Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task24Fragment"
+            app:destination="@id/task24Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task25Fragment"
+            app:destination="@id/task25Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task26Fragment"
+            app:destination="@id/task26Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task27Fragment"
+            app:destination="@id/task27Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task7Fragment"
+            app:destination="@id/task7Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task8Fragment"
+            app:destination="@id/task8Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_task9Fragment"
+            app:destination="@id/task9Fragment" />
     </fragment>
     <fragment
         android:id="@+id/task1Fragment"
@@ -38,4 +110,124 @@
         android:name="com.example.egeinfnav.fragment.Task3Fragment"
         android:label="fragment_task3"
         tools:layout="@layout/fragment_task3" />
+    <fragment
+        android:id="@+id/task4Fragment"
+        android:name="com.example.egeinfnav.fragment.Task4Fragment"
+        android:label="fragment_task4"
+        tools:layout="@layout/fragment_task4" />
+    <fragment
+        android:id="@+id/task5Fragment"
+        android:name="com.example.egeinfnav.fragment.Task5Fragment"
+        android:label="fragment_task5"
+        tools:layout="@layout/fragment_task5" />
+    <fragment
+        android:id="@+id/task6Fragment"
+        android:name="com.example.egeinfnav.fragment.Task6Fragment"
+        android:label="fragment_task6"
+        tools:layout="@layout/fragment_task6" />
+    <fragment
+        android:id="@+id/task10Fragment"
+        android:name="com.example.egeinfnav.fragment.Task10Fragment"
+        android:label="fragment_task10"
+        tools:layout="@layout/fragment_task10" />
+    <fragment
+        android:id="@+id/task11Fragment"
+        android:name="com.example.egeinfnav.fragment.Task11Fragment"
+        android:label="fragment_task11"
+        tools:layout="@layout/fragment_task11" />
+    <fragment
+        android:id="@+id/task12Fragment"
+        android:name="com.example.egeinfnav.fragment.Task12Fragment"
+        android:label="fragment_task12"
+        tools:layout="@layout/fragment_task12" />
+    <fragment
+        android:id="@+id/task13Fragment"
+        android:name="com.example.egeinfnav.fragment.Task13Fragment"
+        android:label="fragment_task13"
+        tools:layout="@layout/fragment_task13" />
+    <fragment
+        android:id="@+id/task14Fragment"
+        android:name="com.example.egeinfnav.fragment.Task14Fragment"
+        android:label="fragment_task14"
+        tools:layout="@layout/fragment_task14" />
+    <fragment
+        android:id="@+id/task15Fragment"
+        android:name="com.example.egeinfnav.fragment.Task15Fragment"
+        android:label="fragment_task15"
+        tools:layout="@layout/fragment_task15" />
+    <fragment
+        android:id="@+id/task16Fragment"
+        android:name="com.example.egeinfnav.fragment.Task16Fragment"
+        android:label="fragment_task16"
+        tools:layout="@layout/fragment_task16" />
+    <fragment
+        android:id="@+id/task17Fragment"
+        android:name="com.example.egeinfnav.fragment.Task17Fragment"
+        android:label="fragment_task17"
+        tools:layout="@layout/fragment_task17" />
+    <fragment
+        android:id="@+id/task18Fragment"
+        android:name="com.example.egeinfnav.fragment.Task18Fragment"
+        android:label="fragment_task18"
+        tools:layout="@layout/fragment_task18" />
+    <fragment
+        android:id="@+id/task19Fragment"
+        android:name="com.example.egeinfnav.fragment.Task19Fragment"
+        android:label="fragment_task19"
+        tools:layout="@layout/fragment_task19" />
+    <fragment
+        android:id="@+id/task20Fragment"
+        android:name="com.example.egeinfnav.fragment.Task20Fragment"
+        android:label="fragment_task20"
+        tools:layout="@layout/fragment_task20" />
+    <fragment
+        android:id="@+id/task21Fragment"
+        android:name="com.example.egeinfnav.fragment.Task21Fragment"
+        android:label="fragment_task21"
+        tools:layout="@layout/fragment_task21" />
+    <fragment
+        android:id="@+id/task22Fragment"
+        android:name="com.example.egeinfnav.fragment.Task22Fragment"
+        android:label="fragment_task22"
+        tools:layout="@layout/fragment_task22" />
+    <fragment
+        android:id="@+id/task23Fragment"
+        android:name="com.example.egeinfnav.fragment.Task23Fragment"
+        android:label="fragment_task23"
+        tools:layout="@layout/fragment_task23" />
+    <fragment
+        android:id="@+id/task24Fragment"
+        android:name="com.example.egeinfnav.fragment.Task24Fragment"
+        android:label="fragment_task24"
+        tools:layout="@layout/fragment_task24" />
+    <fragment
+        android:id="@+id/task25Fragment"
+        android:name="com.example.egeinfnav.fragment.Task25Fragment"
+        android:label="fragment_task25"
+        tools:layout="@layout/fragment_task25" />
+    <fragment
+        android:id="@+id/task26Fragment"
+        android:name="com.example.egeinfnav.fragment.Task26Fragment"
+        android:label="fragment_task26"
+        tools:layout="@layout/fragment_task26" />
+    <fragment
+        android:id="@+id/task27Fragment"
+        android:name="com.example.egeinfnav.fragment.Task27Fragment"
+        android:label="fragment_task27"
+        tools:layout="@layout/fragment_task27" />
+    <fragment
+        android:id="@+id/task7Fragment"
+        android:name="com.example.egeinfnav.fragment.Task7Fragment"
+        android:label="fragment_task7"
+        tools:layout="@layout/fragment_task7" />
+    <fragment
+        android:id="@+id/task8Fragment"
+        android:name="com.example.egeinfnav.fragment.Task8Fragment"
+        android:label="fragment_task8"
+        tools:layout="@layout/fragment_task8" />
+    <fragment
+        android:id="@+id/task9Fragment"
+        android:name="com.example.egeinfnav.fragment.Task9Fragment"
+        android:label="fragment_task9"
+        tools:layout="@layout/fragment_task9" />
 </navigation>

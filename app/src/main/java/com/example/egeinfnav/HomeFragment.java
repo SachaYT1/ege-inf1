@@ -86,9 +86,95 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(view.getContext(), "Был выбран пункт " + state.getName(),
                         Toast.LENGTH_SHORT).show();
                 int num_fragment = state.getNum();
-                getResources().getIdentifier("action_homeFragment_to_task" + Integer.toString(num_fragment) + "Fragment", "navigation", getContext().getPackageName());
-                Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task1Fragment);
-                Navigation.findNavController(view).getCurrentDestination();
+                switch (num_fragment) {
+                    case (1):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task1Fragment);
+                        break;
+                    case (2):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task2Fragment);
+                        break;
+                    case (3):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task3Fragment);
+                        break;
+                    case (4):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task4Fragment);
+                        break;
+                    case (5):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task5Fragment);
+                        break;
+                    case (6):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task6Fragment);
+                        break;
+                    case (7):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task7Fragment);
+                        break;
+                    case (8):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task8Fragment);
+                        break;
+                    case (9):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task9Fragment);
+                        break;
+                    case (10):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task10Fragment);
+                        break;
+                    case (11):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task11Fragment);
+                        break;
+                    case (12):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task12Fragment);
+                        break;
+                    case (13):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task13Fragment);
+                        break;
+                    case (14):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task14Fragment);
+                        break;
+                    case (15):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task15Fragment);
+                        break;
+                    case (16):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task16Fragment);
+                        break;
+                    case (17):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task17Fragment);
+                        break;
+                    case (18):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task18Fragment);
+                        break;
+                    case (19):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task19Fragment);
+                        break;
+                    case (20):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task20Fragment);
+                        break;
+                    case (21):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task21Fragment);
+                        break;
+                    case (22):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task22Fragment);
+                        break;
+                    case (23):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task23Fragment);
+                        break;
+                    case (24):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task24Fragment);
+                        break;
+                    case (25):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task25Fragment);
+                        break;
+                    case (26):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task26Fragment);
+                        break;
+                    case (27):
+                        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_task27Fragment);
+                        break;
+                    default:
+                        Log.e(TAG, "ошибка при переходе на фрагмент " + Integer.toString(num_fragment));
+                        break;
+
+                }
+
+
             }
         };
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
