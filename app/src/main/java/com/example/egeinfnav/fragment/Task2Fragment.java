@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -61,6 +63,35 @@ public class Task2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task2, container, false);
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.theoryFragment2);
+        View view = inflater.inflate(R.layout.fragment_task2, container, false);
+
+        //Инверсия
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment2);
+        paragraph1.setText(array_of_paragraphs[0]);
+        ImageView imageView1 = view.findViewById(R.id.image1_fragment2);
+        imageView1.setImageResource(R.drawable.inversion1);
+
+        // конъюкция
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment2);
+        paragraph2.setText(array_of_paragraphs[1]);
+        ImageView imageView2 = view.findViewById(R.id.image2_fragment2);
+        imageView2.setImageResource(R.drawable.conjuction);
+
+        // дизъюнкция
+        TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment2);
+        paragraph3.setText(array_of_paragraphs[2]);
+        ImageView imageView3 = view.findViewById(R.id.image3_fragment2);
+        imageView3.setImageResource(R.drawable.disjunction);
+
+        // импликация
+        TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment2);
+        paragraph4.setText(array_of_paragraphs[3]);
+        ImageView imageView4 = view.findViewById(R.id.image4_fragment2);
+        imageView4.setImageResource(R.drawable.implication);
+
+
+
+        return view;
     }
 }
