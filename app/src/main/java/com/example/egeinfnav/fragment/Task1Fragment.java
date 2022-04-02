@@ -2,8 +2,10 @@ package com.example.egeinfnav.fragment;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +23,7 @@ import com.example.egeinfnav.R;
 public class Task1Fragment extends Fragment {
 
     private Button task1Btn;
-
+    private Toolbar toolbar;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -59,7 +61,9 @@ public class Task1Fragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            setHasOptionsMenu(true);
         }
+
 
     }
 
@@ -72,22 +76,68 @@ public class Task1Fragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_task1, container, false);
         TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment1);
 
+
         //определение струкрты данных
         paragraph1.setText(array_of_paragraphs[0]);
 
 
         // множество
         TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment1);
-        paragraph2.setText(array_of_paragraphs[1]);
+        paragraph2.setText(Html.fromHtml((String) array_of_paragraphs[1]));
 
-        ImageView imageView = view.findViewById(R.id.image1_fragment1);
-        imageView.setImageResource(R.drawable.set_img);
+        ImageView imageView1 = view.findViewById(R.id.image1_fragment1);
+        imageView1.setImageResource(R.drawable.set_img);
 
 
         // линейный список
         TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment1);
         paragraph3.setText(array_of_paragraphs[2]);
 
+        ImageView imageView2 = view.findViewById(R.id.image2_fragment1);
+        imageView2.setImageResource(R.drawable.linear_list);
+
+        // граф
+        TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment1);
+        paragraph4.setText(array_of_paragraphs[3]);
+
+        ImageView imageView3 = view.findViewById(R.id.image3_fragment1);
+        imageView3.setImageResource(R.drawable.graph);
+
+        // таблица
+        TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment1);
+        paragraph5.setText(array_of_paragraphs[4]);
+
+        ImageView imageView4 = view.findViewById(R.id.image4_fragment1);
+        imageView4.setImageResource(R.drawable.table);
+
+        // дерево
+        TextView paragraph6 = (TextView)view.findViewById(R.id.paragraph6_fragment1);
+        paragraph6.setText(array_of_paragraphs[5]);
+
+
+        //задача1
+        TextView paragraph8 = (TextView)view.findViewById(R.id.paragraph8_fragment1);
+        paragraph8.setText(array_of_paragraphs[6]);
+
+        ImageView imageView5 = view.findViewById(R.id.image5_fragment1);
+        imageView5.setImageResource(R.drawable.task1_fragment1);
+
+        ImageView imageView6 = view.findViewById(R.id.image6_fragment1);
+        imageView6.setImageResource(R.drawable.task1_fragment1_table);
+
+        TextView paragraph9 = (TextView)view.findViewById(R.id.paragraph9_fragment1);
+        paragraph9.setText(array_of_paragraphs[7]);
+
+
+        // задача 2
+        TextView paragraph10 = (TextView)view.findViewById(R.id.paragraph10_fragment1);
+        paragraph10.setText(array_of_paragraphs[8]);
+
+        ImageView imageView7 = view.findViewById(R.id.image7_fragment1);
+        imageView7.setImageResource(R.drawable.task2_fragment1);
+
+        TextView paragraph11 = (TextView)view.findViewById(R.id.paragraph11_fragment1);
+        paragraph11.setText(array_of_paragraphs[9]);
 //in your OnCreate() method
         return view;
     }
