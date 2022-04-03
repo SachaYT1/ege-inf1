@@ -4,9 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -61,6 +64,52 @@ public class Task3Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task3, container, false);
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.theoryFragment3);
+        View view = inflater.inflate(R.layout.fragment_task3, container, false);
+
+
+        // база данных
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment3);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
+        ImageView imageView1 = view.findViewById(R.id.image1_fragment3);
+        imageView1.setImageResource(R.drawable.database);
+
+        //реляционная база данных
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment3);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
+        //условие
+        TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment3);
+        paragraph3.setText("В файле приведён фрагмент базы данных «Продукты» о поставках товаров в магазины районов города. База данных состоит из трёх таблиц.");
+        // движение товаров
+        TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment3);
+        paragraph4.setText(Html.fromHtml(array_of_paragraphs[2]));
+        //товар
+        TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment3);
+        paragraph5.setText("Таблица «Товар» содержит информацию об основных характеристиках каждого товара. Заголовок таблицы имеет следующий вид.");
+        //магазин
+        TextView paragraph6 = (TextView)view.findViewById(R.id.paragraph6_fragment3);
+        paragraph6.setText("Таблица «Магазин» содержит информацию о местонахождении магазинов. Заголовок таблицы имеет следующий вид.");
+        //что нужно найти в задаче
+        TextView paragraph7 = (TextView)view.findViewById(R.id.paragraph7_fragment3);
+        paragraph7.setText(Html.fromHtml(array_of_paragraphs[3]));
+
+        //решение
+        TextView paragraph8 = (TextView)view.findViewById(R.id.paragraph8_fragment3);
+        paragraph8.setText(Html.fromHtml(array_of_paragraphs[4]));
+
+        //изображения для условия
+        ImageView imageView4 = view.findViewById(R.id.image4_fragment3);
+        imageView4.setImageResource(R.drawable.task1_fragment3_movement);
+        ImageView imageView5 = view.findViewById(R.id.image5_fragment3);
+        imageView5.setImageResource(R.drawable.task1_fragment3_product);
+        ImageView imageView6 = view.findViewById(R.id.image6_fragment3);
+        imageView6.setImageResource(R.drawable.task1_fragment3_store);
+
+
+
+
+
+
+        return view;
     }
 }
