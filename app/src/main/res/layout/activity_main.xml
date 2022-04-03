@@ -55,7 +55,8 @@
 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:translationZ="90dp">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/layoutToolBAr"
             android:layout_width="match_parent"
