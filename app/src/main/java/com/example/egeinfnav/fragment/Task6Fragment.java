@@ -4,9 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -61,6 +64,32 @@ public class Task6Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task6, container, false);
+        // Inflate the layout for this fragment
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.theoryFragment6);
+        View view = inflater.inflate(R.layout.fragment_task6, container, false);
+
+        //условие задачи 1
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment6);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
+
+        //решение задачи 1
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment6);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
+
+        //условие задачи 2
+        TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment6);
+        paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
+
+        //решение задачи 2
+        TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment6);
+        paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
+
+        //изображения для условий
+        ImageView imageView1 = view.findViewById(R.id.image1_fragment6);
+        imageView1.setImageResource(R.drawable.task1_fragment6_table);
+        ImageView imageView2 = view.findViewById(R.id.image2_fragment6);
+        imageView2.setImageResource(R.drawable.task2_fragment6);
+
+        return view;
     }
 }
