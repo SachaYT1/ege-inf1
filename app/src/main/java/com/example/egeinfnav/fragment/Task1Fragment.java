@@ -78,7 +78,7 @@ public class Task1Fragment extends Fragment {
 
 
         //определение струкрты данных
-        paragraph1.setText(array_of_paragraphs[0]);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
 
 
         // множество
@@ -91,33 +91,33 @@ public class Task1Fragment extends Fragment {
 
         // линейный список
         TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment1);
-        paragraph3.setText(array_of_paragraphs[2]);
+        paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
 
         ImageView imageView2 = view.findViewById(R.id.image2_fragment1);
         imageView2.setImageResource(R.drawable.linear_list);
 
         // граф
         TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment1);
-        paragraph4.setText(array_of_paragraphs[3]);
+        paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
 
         ImageView imageView3 = view.findViewById(R.id.image3_fragment1);
         imageView3.setImageResource(R.drawable.graph);
 
         // таблица
         TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment1);
-        paragraph5.setText(array_of_paragraphs[4]);
+        paragraph5.setText(Html.fromHtml(array_of_paragraphs[4]));
 
         ImageView imageView4 = view.findViewById(R.id.image4_fragment1);
         imageView4.setImageResource(R.drawable.table);
 
         // дерево
         TextView paragraph6 = (TextView)view.findViewById(R.id.paragraph6_fragment1);
-        paragraph6.setText(array_of_paragraphs[5]);
+        paragraph6.setText(Html.fromHtml(array_of_paragraphs[5]));
 
 
         //задача1
         TextView paragraph8 = (TextView)view.findViewById(R.id.paragraph8_fragment1);
-        paragraph8.setText(array_of_paragraphs[6]);
+        paragraph8.setText(Html.fromHtml(array_of_paragraphs[6]));
 
         ImageView imageView5 = view.findViewById(R.id.image5_fragment1);
         imageView5.setImageResource(R.drawable.task1_fragment1);
@@ -126,18 +126,18 @@ public class Task1Fragment extends Fragment {
         imageView6.setImageResource(R.drawable.task1_fragment1_table);
 
         TextView paragraph9 = (TextView)view.findViewById(R.id.paragraph9_fragment1);
-        paragraph9.setText(array_of_paragraphs[7]);
+        paragraph9.setText(Html.fromHtml(array_of_paragraphs[7]));
 
 
         // задача 2
         TextView paragraph10 = (TextView)view.findViewById(R.id.paragraph10_fragment1);
-        paragraph10.setText(array_of_paragraphs[8]);
+        paragraph10.setText(Html.fromHtml(array_of_paragraphs[8]));
 
         ImageView imageView7 = view.findViewById(R.id.image7_fragment1);
         imageView7.setImageResource(R.drawable.task2_fragment1);
 
         TextView paragraph11 = (TextView)view.findViewById(R.id.paragraph11_fragment1);
-        paragraph11.setText(array_of_paragraphs[9]);
+        paragraph11.setText(Html.fromHtml(array_of_paragraphs[9]));
 //in your OnCreate() method
         return view;
     }

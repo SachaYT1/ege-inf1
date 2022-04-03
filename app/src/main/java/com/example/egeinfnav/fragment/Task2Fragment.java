@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,27 +69,46 @@ public class Task2Fragment extends Fragment {
 
         //Инверсия
         TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment2);
-        paragraph1.setText(array_of_paragraphs[0]);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
         ImageView imageView1 = view.findViewById(R.id.image1_fragment2);
         imageView1.setImageResource(R.drawable.inversion1);
 
         // конъюкция
         TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment2);
-        paragraph2.setText(array_of_paragraphs[1]);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
         ImageView imageView2 = view.findViewById(R.id.image2_fragment2);
         imageView2.setImageResource(R.drawable.conjuction);
 
         // дизъюнкция
         TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment2);
-        paragraph3.setText(array_of_paragraphs[2]);
+        paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
         ImageView imageView3 = view.findViewById(R.id.image3_fragment2);
         imageView3.setImageResource(R.drawable.disjunction);
 
         // импликация
         TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment2);
-        paragraph4.setText(array_of_paragraphs[3]);
+        paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
         ImageView imageView4 = view.findViewById(R.id.image4_fragment2);
         imageView4.setImageResource(R.drawable.implication);
+
+        // Следствия из таблиц истинности
+        TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment2);
+        paragraph5.setText(Html.fromHtml(array_of_paragraphs[4]));
+
+
+        //задача 1
+        TextView paragraph6 = (TextView)view.findViewById(R.id.paragraph6_fragment2);
+        paragraph6.setText(Html.fromHtml(array_of_paragraphs[5]));
+
+        ImageView imageView6 = view.findViewById(R.id.image6_fragment2);
+        imageView6.setImageResource(R.drawable.task1_fragment2_table);
+
+        TextView paragraph7 = (TextView)view.findViewById(R.id.paragraph7_fragment2);
+        paragraph7.setText(Html.fromHtml(array_of_paragraphs[6]));
+
+        ImageView imageView7 = view.findViewById(R.id.image7_fragment2);
+        imageView7.setImageResource(R.drawable.task1_fragment2_python_solution);
+
 
 
 

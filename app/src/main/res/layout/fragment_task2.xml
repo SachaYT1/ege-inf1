@@ -111,6 +111,80 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:adjustViewBounds="true"
             />
+        <TextView
+            android:id="@+id/paragraph5_fragment2"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/image4_fragment2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="следствие из таблиц истинности" />
+
+
+
+        <TextView
+            android:id="@+id/header2_fragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/paragraph5_fragment2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="65dp"
+            style="@style/StyleHeaderTheory"
+            android:layout_marginTop="100dp"
+            android:text="Разбор заданий"
+            />
+
+        <TextView
+            android:id="@+id/paragraph6_fragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/header2_fragment2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/StyleTheory"
+            android:layout_marginTop="20dp"
+            android:text="задача 1"
+            />
+
+        <ImageView
+            android:id="@+id/image6_fragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/paragraph6_fragment2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/paragraph7_fragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/image6_fragment2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/StyleTheory"
+            android:layout_marginTop="20dp"
+            android:text="решение 1"
+            />
+        <ImageView
+            android:id="@+id/image7_fragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/paragraph7_fragment2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/paragraph8_fragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/image7_fragment2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/StyleTheory"
+            android:layout_marginTop="20dp"
+            android:text=""
+            />
+
 
 
 
