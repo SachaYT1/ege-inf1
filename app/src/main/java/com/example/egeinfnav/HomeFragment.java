@@ -83,8 +83,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onTaskClick(Task state, int position) {
 
-                Toast.makeText(view.getContext(), "Был выбран пункт " + state.getName(),
-                        Toast.LENGTH_SHORT).show();
                 int num_fragment = state.getNum();
                 switch (num_fragment) {
                     case (1):

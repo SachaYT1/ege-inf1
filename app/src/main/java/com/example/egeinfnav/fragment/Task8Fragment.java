@@ -4,9 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -61,6 +64,52 @@ public class Task8Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task8, container, false);
+        // Inflate the layout for this fragment
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.TheoryFragment8);
+        View view = inflater.inflate(R.layout.fragment_task8, container, false);
+
+        //условие задачи 1
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment8);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
+        //фото 1
+        ImageView imageView1 = view.findViewById(R.id.image1_fragment8);
+        imageView1.setImageResource(R.drawable.n2l);
+
+        //условие задачи 2
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment8);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
+        //фото 2
+        ImageView imageView2 = view.findViewById(R.id.image2_fragment8);
+        imageView2.setImageResource(R.drawable.qnl);
+
+        //условие задачи 3
+        TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment8);
+        paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
+        //фото 3
+        ImageView imageView3 = view.findViewById(R.id.image3_fragment8);
+        imageView3.setImageResource(R.drawable.nn1n2);
+
+        //условие задачи 4
+        TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment8);
+        paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
+        //фото 4
+        ImageView imageView4 = view.findViewById(R.id.image4_fragment8);
+        imageView4.setImageResource(R.drawable.combinatorics);
+
+        //условие задачи 1
+        TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment8);
+        paragraph5.setText(Html.fromHtml(array_of_paragraphs[4]));
+        //решение задачи 1
+        TextView paragraph6 = (TextView)view.findViewById(R.id.paragraph6_fragment8);
+        paragraph6.setText(Html.fromHtml(array_of_paragraphs[5]));
+        //условие задачи 2
+        TextView paragraph7 = (TextView)view.findViewById(R.id.paragraph7_fragment8);
+        paragraph7.setText(Html.fromHtml(array_of_paragraphs[6]));
+        //решение задачи 2
+        TextView paragraph8 = (TextView)view.findViewById(R.id.paragraph8_fragment8);
+        paragraph8.setText(Html.fromHtml(array_of_paragraphs[7]));
+
+
+        return view;
     }
 }

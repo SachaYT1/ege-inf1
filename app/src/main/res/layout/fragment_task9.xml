@@ -1,14 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<!-- TODO: Update blank fragment layout -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.Task9Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/header1_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="70dp"
+            style="@style/StyleHeaderTheory"
+            android:text="Теория для задачи 9"
+            app:layout_constraintBottom_toTopOf="@+id/paragraph1_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/paragraph1_fragment9"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toBottomOf="@id/header1_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="формулы excel" />
+        <TextView
+            android:id="@+id/header2_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="70dp"
+            style="@style/StyleHeaderTheory"
+            android:text="Типы ссылок на ячейки"
+            app:layout_constraintTop_toBottomOf="@+id/paragraph1_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/paragraph2_fragment9"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toBottomOf="@id/header2_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="относительная формула" />
+        <ImageView
+            android:id="@+id/image2_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/paragraph2_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/paragraph3_fragment9"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/image2_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="смешанная формула" />
+        <ImageView
+            android:id="@+id/image3_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/paragraph3_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/paragraph4_fragment9"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/image3_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="абсолютная формула" />
+        <ImageView
+            android:id="@+id/image4_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/paragraph4_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/header3_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/image4_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="65dp"
+            style="@style/StyleHeaderTheory"
+            android:layout_marginTop="20dp"
+            android:text="Разбор заданий"
+            />
+        <TextView
+            android:id="@+id/paragraph5_fragment9"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/header3_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="условие задачи1" />
+        <TextView
+            android:id="@+id/paragraph6_fragment9"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/paragraph5_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="максимальное значение" />
+        <ImageView
+            android:id="@+id/image6_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/paragraph6_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/paragraph7_fragment9"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/image6_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="среднее значение" />
+        <ImageView
+            android:id="@+id/image7_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/paragraph7_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/paragraph8_fragment9"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/image7_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="ответ" />
+        <ImageView
+            android:id="@+id/image8_fragment9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/paragraph8_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/paragraph9_fragment8"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/image8_fragment9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/StyleTheory"
+            android:layout_marginTop="10dp"
+            android:text=""
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

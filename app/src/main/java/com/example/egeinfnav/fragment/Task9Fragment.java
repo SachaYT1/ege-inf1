@@ -4,9 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -61,6 +64,55 @@ public class Task9Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task9, container, false);
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.theoryFragment9);
+        View view = inflater.inflate(R.layout.fragment_task9, container, false);
+
+        //формулы excel
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment9);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
+
+        //относительная ссылка
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment9);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
+        ImageView imageView2 = view.findViewById(R.id.image2_fragment9);
+        imageView2.setImageResource(R.drawable.otnositelnaya_sylka);
+
+        //смешанная ссылка
+        TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment9);
+        paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
+        ImageView imageView3 = view.findViewById(R.id.image3_fragment9);
+        imageView3.setImageResource(R.drawable.smeshannay_sylka);
+
+        //абсолютная ссылка
+        TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment9);
+        paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
+        ImageView imageView4 = view.findViewById(R.id.image4_fragment9);
+        imageView4.setImageResource(R.drawable.absolytnaya_sylka);
+
+        //условие задачи
+        TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment9);
+        paragraph5.setText(Html.fromHtml(array_of_paragraphs[4]));
+
+        //максмальное занчение
+        TextView paragraph6 = (TextView)view.findViewById(R.id.paragraph6_fragment9);
+        paragraph6.setText(Html.fromHtml(array_of_paragraphs[5]));
+        ImageView imageView6 = view.findViewById(R.id.image6_fragment9);
+        imageView6.setImageResource(R.drawable.task1_max_fragment9);
+
+        // среднее значение
+        TextView paragraph7 = (TextView)view.findViewById(R.id.paragraph7_fragment9);
+        paragraph7.setText(Html.fromHtml(array_of_paragraphs[6]));
+        ImageView imageView7 = view.findViewById(R.id.image7_fragment9);
+        imageView7.setImageResource(R.drawable.task1_srznach_fragment9);
+
+        // ответ
+        TextView paragraph8 = (TextView)view.findViewById(R.id.paragraph8_fragment9);
+        paragraph8.setText(Html.fromHtml(array_of_paragraphs[7]));
+        ImageView imageView8 = view.findViewById(R.id.image8_fragment9);
+        imageView8.setImageResource(R.drawable.task1_otv_fragment9);
+
+
+
+        return view;
     }
 }
