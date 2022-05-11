@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<!-- TODO: Update blank fragment layout -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.Task10Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/header1_fragment10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="70dp"
+            style="@style/StyleHeaderTheory"
+            android:text="Разбор заданий"
+            app:layout_constraintBottom_toTopOf="@+id/paragraph1_fragment10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/paragraph1_fragment10"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toBottomOf="@id/header1_fragment10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="условие задачи 1" />
+
+
+        <TextView
+            android:id="@+id/paragraph2_fragment10"
+            style="@style/StyleTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintTop_toBottomOf="@id/paragraph1_fragment10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="решение задачи 1" />
+        <ImageView
+            android:id="@+id/image2_fragment10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/paragraph2_fragment10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:id="@+id/paragraph3_fragment10"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/image2_fragment10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/StyleTheory"
+            android:layout_marginTop="10dp"
+            android:text=""
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
