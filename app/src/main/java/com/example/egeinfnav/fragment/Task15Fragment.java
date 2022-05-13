@@ -3,10 +3,15 @@ package com.example.egeinfnav.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -61,6 +66,41 @@ public class Task15Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task15, container, false);
+
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.TheoryFragment15);
+        View view = inflater.inflate(R.layout.fragment_task15, container, false);
+
+        // теория из фрагмента 2
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment15);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
+
+        //кнопка для перехода на фрагмент
+        Button btn_to_fragment2 = (Button) view.findViewById(R.id.btn_fragment15_to_fragment2);
+        btn_to_fragment2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_task15Fragment_to_task2Fragment);
+            }
+        });
+
+        // таблица
+        ImageView imageView1 = view.findViewById(R.id.image1_fragment15);
+        imageView1.setImageResource(R.drawable.table_fragment15);
+
+        // условие для задачи 1
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment15);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
+        //решение задачи 1
+        TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment15);
+        paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
+        ImageView imageView3 = view.findViewById(R.id.image3_fragment15);
+        imageView3.setImageResource(R.drawable.task1_fragment15);
+
+        //ответ + примечание 1
+        TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment15);
+        paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
+
+
+        return view;
     }
 }
