@@ -3,10 +3,15 @@ package com.example.egeinfnav.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -60,7 +65,34 @@ public class Task11Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task11, container, false);
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.TheoryFragment11);
+        View view = inflater.inflate(R.layout.fragment_task11, container, false);
+
+        //теория
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment11);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
+
+        //кнопка для перехода на фрагмент
+        Button btn_to_fragment7 = (Button) view.findViewById(R.id.btn_fragment11_to_fragment7);
+        btn_to_fragment7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_task11Fragment_to_task7Fragment);
+            }
+        });
+
+        //задача 1
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment11);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
+        TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment11);
+        paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
+
+        // задача 2
+        TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment11);
+        paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
+        TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment11);
+        paragraph5.setText(Html.fromHtml(array_of_paragraphs[4]));
+
+        return view;
     }
 }
