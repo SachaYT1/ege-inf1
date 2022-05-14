@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "683678876947",
+    "project_id": "inf-ege",
+    "storage_bucket": "inf-ege.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683678876947:android:0974772c980a0e44d086e6",
+        "android_client_info": {
+          "package_name": "com.example.egeinfnav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683678876947-bi08v1ju3altabnamoo3dp0634tto9sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0xUqOLoUlkGcNyxuQckSQ8ugYVWWsAxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683678876947-bi08v1ju3altabnamoo3dp0634tto9sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
