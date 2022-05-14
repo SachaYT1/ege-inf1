@@ -3,10 +3,15 @@ package com.example.egeinfnav.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -61,6 +66,34 @@ public class Task23Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task23, container, false);
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.TheoryFragment23);
+        View view = inflater.inflate(R.layout.fragment_task23, container, false);
+
+        //теория
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment23);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
+
+        //кнопка для перехода на фрагмент
+        Button btn_to_fragment16 = (Button) view.findViewById(R.id.btn_fragment23_to_fragment16);
+        btn_to_fragment16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_task23Fragment_to_task16Fragment);
+            }
+        });
+
+        //условие задачи 1
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment23);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
+
+
+        // задача 2
+        TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment23);
+        paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
+        ImageView imageView3 = view.findViewById(R.id.image3_fragment23);
+        imageView3.setImageResource(R.drawable.task1_fragment23);
+
+
+        return view;
     }
 }

@@ -202,7 +202,11 @@
         android:id="@+id/task23Fragment"
         android:name="com.example.egeinfnav.fragment.Task23Fragment"
         android:label="fragment_task23"
-        tools:layout="@layout/fragment_task23" />
+        tools:layout="@layout/fragment_task23" >
+        <action
+            android:id="@+id/action_task23Fragment_to_task16Fragment"
+            app:destination="@id/task16Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/task24Fragment"
         android:name="com.example.egeinfnav.fragment.Task24Fragment"
