@@ -8,31 +8,16 @@
         <entry key="..\:/Programming/Java/EGEinfnav/app/src/main/res/layout/fragment_task1.xml" value="0.36926605504587157" />
         <entry key="..\:/Programming/Java/EGEinfnav/app/src/main/res/layout/fragment_task2.xml" value="0.4041666666666667" />
         <entry key="..\:/Programming/Java/EGEinfnav/app/src/main/res/layout/list_task.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.246875" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_home.xml" value="0.3942857142857143" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task1.xml" value="0.4" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task10.xml" value="0.23125" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task11.xml" value="0.536" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task12.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task13.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task14.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task15.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task16.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task17.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task18.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task2.xml" value="0.39753320683111953" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task22.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task23.xml" value="0.4" />
+        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/activity_main.xml" value="0.4041666666666667" />
+        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_home.xml" value="0.4041666666666667" />
+        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task1.xml" value="0.4680259499536608" />
         <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task27.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task3.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task4.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task5.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task6.xml" value="0.4041666666666667" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task7.xml" value="0.3880764904386952" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task8.xml" value="0.3375" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/fragment_task9.xml" value="0.264" />
-        <entry key="..\:/Programming/Java/ege-inf1/app/src/main/res/layout/list_task.xml" value="0.4041666666666667" />
+        <entry key="..\:/Users/Sacha/StudioProjects/ege-inf1/app/src/main/res/layout/fragment_task10.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Sacha/StudioProjects/ege-inf1/app/src/main/res/layout/fragment_task11.xml" value="0.4041666666666667" />
+        <entry key="..\:/Users/Sacha/StudioProjects/ege-inf1/app/src/main/res/layout/fragment_task12.xml" value="0.4" />
+        <entry key="..\:/Users/Sacha/StudioProjects/ege-inf1/app/src/main/res/layout/fragment_task19.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Sacha/StudioProjects/ege-inf1/app/src/main/res/layout/fragment_task20.xml" value="0.1" />
+        <entry key="..\:/Users/Sacha/StudioProjects/ege-inf1/app/src/main/res/layout/fragment_task26.xml" value="0.16641337386018237" />
         <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.196" />
         <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.196" />
         <entry key="..\:/Users/it-cube.MCK-KTITS/AndroidStudioProjects/ege-inf1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
@@ -43,7 +28,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -4,9 +4,11 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.egeinfnav.R;
 
@@ -61,6 +63,16 @@ public class Task20Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task20, container, false);
+        String[] array_of_paragraphs = getResources().getStringArray(R.array.TheoryFragment20);
+        View view = inflater.inflate(R.layout.fragment_task20, container, false);
+
+
+        //задача 1
+        TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment20);
+        paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
+        TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment20);
+        paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
+
+        return view;
     }
 }
