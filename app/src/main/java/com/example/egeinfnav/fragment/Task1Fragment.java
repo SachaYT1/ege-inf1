@@ -88,7 +88,6 @@ public class Task1Fragment extends Fragment {
 
         ImageView imageView1 = view.findViewById(R.id.image1_fragment1);
         String imageview1_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/set_img.png?alt=media&token=f21ff684-8b66-4410-ab69-d217dadd555b";
-       // imageView1.setImageResource(R.drawable.set_im
         Glide.with(getActivity().getApplicationContext()).load(imageview1_url).into(imageView1);
 
 
