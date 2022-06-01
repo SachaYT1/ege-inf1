@@ -96,21 +96,24 @@ public class Task1Fragment extends Fragment {
         paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
 
         ImageView imageView2 = view.findViewById(R.id.image2_fragment1);
-        imageView2.setImageResource(R.drawable.linear_list);
+        String imageview2_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment1%2Flinear_list.png?alt=media&token=f6a2dc44-2b7a-4b44-8441-5e8a79a2a170";
+        Glide.with(getActivity().getApplicationContext()).load(imageview2_url).into(imageView2);
 
         // граф
         TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment1);
         paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
 
         ImageView imageView3 = view.findViewById(R.id.image3_fragment1);
-        imageView3.setImageResource(R.drawable.graph);
+        String imageview3_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment1%2Fgraph.png?alt=media&token=29dc7c22-b6be-49bd-855e-4a95c3a6ff05";
+        Glide.with(getActivity().getApplicationContext()).load(imageview3_url).into(imageView3);
 
         // таблица
         TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment1);
         paragraph5.setText(Html.fromHtml(array_of_paragraphs[4]));
 
         ImageView imageView4 = view.findViewById(R.id.image4_fragment1);
-        imageView4.setImageResource(R.drawable.table);
+        String imageview4_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment1%2Ftable.png?alt=media&token=1d70925f-d736-4266-8432-11d921a65dce";
+        Glide.with(getActivity().getApplicationContext()).load(imageview4_url).into(imageView4);
 
         // дерево
         TextView paragraph6 = (TextView)view.findViewById(R.id.paragraph6_fragment1);
@@ -122,10 +125,12 @@ public class Task1Fragment extends Fragment {
         paragraph8.setText(Html.fromHtml(array_of_paragraphs[6]));
 
         ImageView imageView5 = view.findViewById(R.id.image5_fragment1);
-        imageView5.setImageResource(R.drawable.task1_fragment1);
+        String imageview5_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment1%2Ftask1_fragment1.png?alt=media&token=3d102434-919e-4a80-8181-0acb758917e6";
+        Glide.with(getActivity().getApplicationContext()).load(imageview5_url).into(imageView5);
 
         ImageView imageView6 = view.findViewById(R.id.image6_fragment1);
-        imageView6.setImageResource(R.drawable.task1_fragment1_table);
+        String imageview6_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment1%2Ftask1_fragment1_table.png?alt=media&token=506fba4b-6251-4ae1-939b-68862179fd0f";
+        Glide.with(getActivity().getApplicationContext()).load(imageview6_url).into(imageView6);
 
         TextView paragraph9 = (TextView)view.findViewById(R.id.paragraph9_fragment1);
         paragraph9.setText(Html.fromHtml(array_of_paragraphs[7]));
@@ -136,7 +141,8 @@ public class Task1Fragment extends Fragment {
         paragraph10.setText(Html.fromHtml(array_of_paragraphs[8]));
 
         ImageView imageView7 = view.findViewById(R.id.image7_fragment1);
-        imageView7.setImageResource(R.drawable.task2_fragment1);
+        String imageview7_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment1%2Ftask2_fragment1.png?alt=media&token=5e2a021e-86ab-431b-bd72-7dbb7bfeafd4";
+        Glide.with(getActivity().getApplicationContext()).load(imageview7_url).into(imageView7);
 
         TextView paragraph11 = (TextView)view.findViewById(R.id.paragraph11_fragment1);
         paragraph11.setText(Html.fromHtml(array_of_paragraphs[9]));

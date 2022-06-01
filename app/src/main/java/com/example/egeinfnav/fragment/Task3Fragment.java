@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -72,7 +73,8 @@ public class Task3Fragment extends Fragment {
         TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment3);
         paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
         ImageView imageView1 = view.findViewById(R.id.image1_fragment3);
-        imageView1.setImageResource(R.drawable.database);
+        String imageview1_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment3%2Fdatabase.png?alt=media&token=d1d5d71f-8878-4c66-a9cc-066ef65bfa92";
+        Glide.with(getActivity().getApplicationContext()).load(imageview1_url).into(imageView1);
 
         //реляционная база данных
         TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment3);
@@ -99,11 +101,16 @@ public class Task3Fragment extends Fragment {
 
         //изображения для условия
         ImageView imageView4 = view.findViewById(R.id.image4_fragment3);
-        imageView4.setImageResource(R.drawable.task1_fragment3_movement);
+        String imageview4_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment3%2Ftask1_fragment3_movement.png?alt=media&token=87a458bc-7e8c-4901-bacf-f19c72c4a6e6";
+        Glide.with(getActivity().getApplicationContext()).load(imageview4_url).into(imageView4);
+
         ImageView imageView5 = view.findViewById(R.id.image5_fragment3);
-        imageView5.setImageResource(R.drawable.task1_fragment3_product);
+        String imageview5_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment3%2Ftask1_fragment3_product.png?alt=media&token=774b5049-eac8-4b63-b314-c45d61793869";
+        Glide.with(getActivity().getApplicationContext()).load(imageview5_url).into(imageView5);
+
         ImageView imageView6 = view.findViewById(R.id.image6_fragment3);
-        imageView6.setImageResource(R.drawable.task1_fragment3_store);
+        String imageview6_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment3%2Ftask1_fragment3_store.png?alt=media&token=ff2e733e-7d15-4a00-bdfa-9175351a3163";
+        Glide.with(getActivity().getApplicationContext()).load(imageview6_url).into(imageView6);
 
 
 

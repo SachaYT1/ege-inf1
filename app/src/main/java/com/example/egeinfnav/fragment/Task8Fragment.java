@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -73,28 +74,33 @@ public class Task8Fragment extends Fragment {
         paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
         //фото 1
         ImageView imageView1 = view.findViewById(R.id.image1_fragment8);
-        imageView1.setImageResource(R.drawable.n2l);
+        String imageview1_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment8%2Fn2l.png?alt=media&token=0b3dca98-f75e-450f-966e-d253929104d3";
+        Glide.with(getActivity().getApplicationContext()).load(imageview1_url).into(imageView1);
 
         //условие задачи 2
         TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment8);
         paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
         //фото 2
         ImageView imageView2 = view.findViewById(R.id.image2_fragment8);
-        imageView2.setImageResource(R.drawable.qnl);
+        String imageview2_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment8%2Fqnl.png?alt=media&token=9db16952-c378-4501-ac07-b3143a6b0be2";
+        Glide.with(getActivity().getApplicationContext()).load(imageview2_url).into(imageView2);
 
         //условие задачи 3
         TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment8);
         paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
         //фото 3
         ImageView imageView3 = view.findViewById(R.id.image3_fragment8);
-        imageView3.setImageResource(R.drawable.nn1n2);
+        String imageview3_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment8%2Fnn1n2.png?alt=media&token=27e30a35-7aea-483c-9267-fbaae43e5d76";
+        Glide.with(getActivity().getApplicationContext()).load(imageview3_url).into(imageView3);
+
 
         //условие задачи 4
         TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment8);
         paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
         //фото 4
         ImageView imageView4 = view.findViewById(R.id.image4_fragment8);
-        imageView4.setImageResource(R.drawable.combinatorics);
+        String imageview4_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment8%2Fcombinatorics.png?alt=media&token=4538391c-ea86-4a28-aed1-1f7574972ed2";
+        Glide.with(getActivity().getApplicationContext()).load(imageview4_url).into(imageView4);
 
         //условие задачи 1
         TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment8);

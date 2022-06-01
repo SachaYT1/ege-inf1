@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -73,18 +74,21 @@ public class Task14Fragment extends Fragment {
         TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment14);
         paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
         ImageView imageView1 = view.findViewById(R.id.image1_fragment14);
-        imageView1.setImageResource(R.drawable.n_to_10_fragment14);
+        String imageview1_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment14%2Fn_to_10_fragment14.png?alt=media&token=94a04cb8-5a9f-44cc-968f-3d8f680d3d16";
+        Glide.with(getActivity().getApplicationContext()).load(imageview1_url).into(imageView1);
 
         //основное правило
         TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment14);
         paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
         ImageView imageView2 = view.findViewById(R.id.image2_fragment14);
-        imageView2.setImageResource(R.drawable.rule_fragment14);
+        String imageview2_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment14%2Frule_fragment14.png?alt=media&token=f3273acf-4c15-42ff-9296-d228a01f657e";
+        Glide.with(getActivity().getApplicationContext()).load(imageview2_url).into(imageView2);
         // перевод из 10 в n систему
         TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment14);
         paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
         ImageView imageView3 = view.findViewById(R.id.image3_fragment14);
-        imageView3.setImageResource(R.drawable.a_10_to_n_fragment14);
+        String imageview3_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment14%2Fa_10_to_n_fragment14.png?alt=media&token=7c7a8f19-8394-42e6-ac8e-131228b5b016";
+        Glide.with(getActivity().getApplicationContext()).load(imageview3_url).into(imageView3);
 
         // сложение + вычитание
         TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment14);

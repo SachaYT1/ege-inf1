@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -92,11 +93,16 @@ public class Task7Fragment extends Fragment {
 
         //изображения для условий
         ImageView imageView1 = view.findViewById(R.id.image1_fragment7);
-        imageView1.setImageResource(R.drawable.text_info_fragment7);
+        String imageview1_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment7%2Ftext_info_fragment7.png?alt=media&token=d1d5d030-feae-44d0-a958-7e838946dd00";
+        Glide.with(getActivity().getApplicationContext()).load(imageview1_url).into(imageView1);
+
         ImageView imageView2 = view.findViewById(R.id.image2_fragment7);
-        imageView2.setImageResource(R.drawable.graph_info_fragment7);
+        String imageview2_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment7%2Fgraph_info_fragment7.png?alt=media&token=132aa57f-2d4b-4d57-8301-c766c7ffd39c";
+        Glide.with(getActivity().getApplicationContext()).load(imageview2_url).into(imageView2);
         ImageView imageView3 = view.findViewById(R.id.image3_fragment7);
-        imageView3.setImageResource(R.drawable.sound_info_fragment7);
+        String imageview3_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment7%2Fsound_info_fragment7.png?alt=media&token=be78afab-988d-431f-b4a5-e7dce92c8151";
+        Glide.with(getActivity().getApplicationContext()).load(imageview3_url).into(imageView3);
+
 
 
         // условие задачи 1

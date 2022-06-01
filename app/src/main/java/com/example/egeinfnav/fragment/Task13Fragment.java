@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -90,13 +91,17 @@ public class Task13Fragment extends Fragment {
 
         // изображения
         ImageView imageView2 = view.findViewById(R.id.image2_fragment13);
-        imageView2.setImageResource(R.drawable.task1_fragment13_condition);
+        String imageview2_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment13%2Ftask1_fragment13_condition.png?alt=media&token=353fa0ef-a573-4aa2-a333-5baaf37c17fd";
+        Glide.with(getActivity().getApplicationContext()).load(imageview2_url).into(imageView2);
         ImageView imageView3 = view.findViewById(R.id.image3_fragment13);
-        imageView3.setImageResource(R.drawable.task1_fragment13_solution);
+        String imageview3_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment13%2Ftask1_fragment13_solution.png?alt=media&token=c9bf2d1f-ccfa-4b80-92c9-3c113961b7dd";
+        Glide.with(getActivity().getApplicationContext()).load(imageview3_url).into(imageView3);
         ImageView imageView4 = view.findViewById(R.id.image4_fragment13);
-        imageView4.setImageResource(R.drawable.task2_fragment13_condition);
+        String imageview4_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment13%2Ftask2_fragment13_condition.png?alt=media&token=9afedc19-9e0a-4eb7-91ab-e49687064f4c";
+        Glide.with(getActivity().getApplicationContext()).load(imageview4_url).into(imageView4);
         ImageView imageView5 = view.findViewById(R.id.image5_fragment13);
-        imageView5.setImageResource(R.drawable.task2_fragment13_solution);
+        String imageview5_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment13%2Ftask2_fragment13_solution.png?alt=media&token=d08e6620-d866-4954-aa95-dbed51b9f103";
+        Glide.with(getActivity().getApplicationContext()).load(imageview5_url).into(imageView5);
         return view;
     }
 }

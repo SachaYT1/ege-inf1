@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -72,14 +73,15 @@ public class Task22Fragment extends Fragment {
         TextView paragraph1 = (TextView)view.findViewById(R.id.paragraph1_fragment22);
         paragraph1.setText(Html.fromHtml(array_of_paragraphs[0]));
         ImageView imageView1 = view.findViewById(R.id.image1_fragment22);
-        imageView1.setImageResource(R.drawable.task1_fragment22);
+        String imageview1_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment22%2Ftask1_fragment22.png?alt=media&token=c1252b81-5bc2-42c1-b7f2-33d3b4c2f491";
+        Glide.with(getActivity().getApplicationContext()).load(imageview1_url).into(imageView1);
 
         //решение задачи 1
         TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment22);
         paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
         ImageView imageView2 = view.findViewById(R.id.image2_fragment22);
-        imageView2.setImageResource(R.drawable.task1_solution_fragment22);
-
+        String imageview2_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment22%2Ftask1_solution_fragment22.png?alt=media&token=93f49fe1-26da-4fa9-92ef-4031f970fefe";
+        Glide.with(getActivity().getApplicationContext()).load(imageview2_url).into(imageView2);
         return view;
     }
 }

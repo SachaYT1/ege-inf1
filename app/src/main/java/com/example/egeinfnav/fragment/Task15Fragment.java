@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -94,7 +95,8 @@ public class Task15Fragment extends Fragment {
         TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment15);
         paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
         ImageView imageView3 = view.findViewById(R.id.image3_fragment15);
-        imageView3.setImageResource(R.drawable.task1_fragment15);
+        String imageview3_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragemnt15%2Ftask1_fragment15.png?alt=media&token=43097eeb-a008-4580-98ac-e0e183368af9";
+        Glide.with(getActivity().getApplicationContext()).load(imageview3_url).into(imageView3);
 
         //ответ + примечание 1
         TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment15);

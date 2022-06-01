@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -75,7 +76,8 @@ public class Task10Fragment extends Fragment {
         TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment10);
         paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
         ImageView imageView2 = view.findViewById(R.id.image2_fragment10);
-        imageView2.setImageResource(R.drawable.task1_poisk_ty_fragment10);
+        String imageview2_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment10%2Ftask1_poisk_ty_fragment10.png?alt=media&token=a824045c-25a2-4c10-9919-8d7211784369";
+        Glide.with(getActivity().getApplicationContext()).load(imageview2_url).into(imageView2);
         return view;
     }
 }

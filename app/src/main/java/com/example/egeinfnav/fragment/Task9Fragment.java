@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.egeinfnav.R;
 
 /**
@@ -75,19 +76,22 @@ public class Task9Fragment extends Fragment {
         TextView paragraph2 = (TextView)view.findViewById(R.id.paragraph2_fragment9);
         paragraph2.setText(Html.fromHtml(array_of_paragraphs[1]));
         ImageView imageView2 = view.findViewById(R.id.image2_fragment9);
-        imageView2.setImageResource(R.drawable.otnositelnaya_sylka);
+        String imageview2_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment9%2Fotnositelnaya_sylka.png?alt=media&token=db6e160e-9d75-487c-bc5f-f540a56dabc2";
+        Glide.with(getActivity().getApplicationContext()).load(imageview2_url).into(imageView2);
 
         //смешанная ссылка
         TextView paragraph3 = (TextView)view.findViewById(R.id.paragraph3_fragment9);
         paragraph3.setText(Html.fromHtml(array_of_paragraphs[2]));
         ImageView imageView3 = view.findViewById(R.id.image3_fragment9);
-        imageView3.setImageResource(R.drawable.smeshannay_sylka);
+        String imageview3_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment9%2Fsmeshannay_sylka.png?alt=media&token=025ea70d-1f26-43bc-a24c-7de75bd048b0";
+        Glide.with(getActivity().getApplicationContext()).load(imageview3_url).into(imageView3);
 
         //абсолютная ссылка
         TextView paragraph4 = (TextView)view.findViewById(R.id.paragraph4_fragment9);
         paragraph4.setText(Html.fromHtml(array_of_paragraphs[3]));
         ImageView imageView4 = view.findViewById(R.id.image4_fragment9);
-        imageView4.setImageResource(R.drawable.absolytnaya_sylka);
+        String imageview4_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment9%2Fabsolytnaya_sylka.png?alt=media&token=4681cedd-08fc-4bc5-b6c8-0ae16aa36eac";
+        Glide.with(getActivity().getApplicationContext()).load(imageview4_url).into(imageView4);
 
         //условие задачи
         TextView paragraph5 = (TextView)view.findViewById(R.id.paragraph5_fragment9);
@@ -97,19 +101,22 @@ public class Task9Fragment extends Fragment {
         TextView paragraph6 = (TextView)view.findViewById(R.id.paragraph6_fragment9);
         paragraph6.setText(Html.fromHtml(array_of_paragraphs[5]));
         ImageView imageView6 = view.findViewById(R.id.image6_fragment9);
-        imageView6.setImageResource(R.drawable.task1_max_fragment9);
+        String imageview6_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment9%2Ftask1_max_fragment9.png?alt=media&token=5fe01aef-84f4-4a68-962e-db0d1f322654";
+        Glide.with(getActivity().getApplicationContext()).load(imageview6_url).into(imageView6);
 
         // среднее значение
         TextView paragraph7 = (TextView)view.findViewById(R.id.paragraph7_fragment9);
         paragraph7.setText(Html.fromHtml(array_of_paragraphs[6]));
         ImageView imageView7 = view.findViewById(R.id.image7_fragment9);
-        imageView7.setImageResource(R.drawable.task1_srznach_fragment9);
+        String imageview7_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment9%2Ftask1_srznach_fragment9.png?alt=media&token=e14c2a8b-97dd-437a-a199-80fd178941be";
+        Glide.with(getActivity().getApplicationContext()).load(imageview7_url).into(imageView7);
 
         // ответ
         TextView paragraph8 = (TextView)view.findViewById(R.id.paragraph8_fragment9);
         paragraph8.setText(Html.fromHtml(array_of_paragraphs[7]));
         ImageView imageView8 = view.findViewById(R.id.image8_fragment9);
-        imageView8.setImageResource(R.drawable.task1_otv_fragment9);
+        String imageview8_url = "https://firebasestorage.googleapis.com/v0/b/inf-ege.appspot.com/o/fragment9%2Ftask1_otv_fragment9.png?alt=media&token=d5e5fd85-7c22-4c36-a9e4-10a9f7535dc9";
+        Glide.with(getActivity().getApplicationContext()).load(imageview8_url).into(imageView8);
 
 
 
